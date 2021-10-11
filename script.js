@@ -30,8 +30,10 @@ for(let i = 0; i < 2; i++) {
 
     if (a == '' || b == '' || a == null || b == null || a.length > 50) {
         i--;
+        console.log('error');
     } else {
         personalMovieDB.movies[a] = b;
+        console.log('done');
     }
 }
 
